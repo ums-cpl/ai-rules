@@ -43,9 +43,9 @@ Rules are installed into `.cursor/rules/`.
 | Rule | Description |
 |------|-------------|
 | global/base-rules | Typography (Title Case), language (American English, code in English), deterministic editing |
-| tech/latex | LaTeX: em/en dashes, sentence-per-line (auto-attached for `**/*.tex`) |
-| tech/python | Python style and conventions (placeholder; auto-attached for `**/*.py`) |
-| tech/cpp | C++ style and conventions (placeholder; auto-attached for `**/*.cpp`) |
+| tech/latex | *LaTeX* style and conventions (auto-attached for `**/*.tex`) |
+| tech/python | *Python* style and conventions (placeholder; auto-attached for `**/*.py`) |
+| tech/cpp | *C++* style and conventions (placeholder; auto-attached for `**/*.cpp`) |
 
 ## Adding Rules
 
