@@ -18,9 +18,9 @@ When using English, use American English unless explicitly requested otherwise.
 
 All source code---including comments, identifiers, strings (e.g., error messages), and documentation---is to be written in English unless explicitly requested otherwise.
 
-## Editing Policy (Deterministic Mode)
+## Editing Policy
 
-Apply only the explicitly requested changes.
+Apply only the explicitly requested changes (deterministic mode).
 
 ### Scope Control
 
