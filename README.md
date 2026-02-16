@@ -14,13 +14,15 @@ Markdown (`.md`) with YAML frontmatter for portability across tools and editors.
     ├── global/
     │   └── coding-standards.md    # Typography, language, editing policy
     └── tech/
+        ├── cpp.md           # C++ style (applies when .cpp files are open)
         ├── latex.md         # LaTeX formatting (applies when .tex files are open)
-        ├── python.md        # Python style (applies when .py files are open)
-        └── cpp.md           # C++ style (applies when .cpp files are open)
+        ├── markdown.md      # Markdown formatting (applies when .md / .markdown files are open)
+        └── python.md        # Python style (applies when .py files are open)
 ```
 
 - **rules/global/** — Cross-cutting rules applied in every session.
 - **rules/tech/** — Tech-specific rules (globs) applied when matching files are open.
+  Each tech rule follows the same structure: Applicability Gate, Precedence, Scope, Rules, Non-Goals.
 
 ## Rule Modes
 
@@ -43,9 +45,10 @@ Rules are installed into `.cursor/rules/`.
 | Rule | Description |
 |------|-------------|
 | global/coding-standards | Typography (Title Case), language (American English, code in English), deterministic editing |
-| tech/latex | *LaTeX* style and conventions (auto-attached for `**/*.tex`) |
-| tech/python | *Python* style and conventions (placeholder; auto-attached for `**/*.py`) |
 | tech/cpp | *C++* style and conventions (placeholder; auto-attached for `**/*.cpp`) |
+| tech/latex | *LaTeX* formatting (dashes, one sentence per line; auto-attached for `**/*.tex`) |
+| tech/markdown | *Markdown* formatting (one sentence per line; auto-attached for `**/*.md`, `**/*.markdown`) |
+| tech/python | *Python* style and conventions (placeholder; auto-attached for `**/*.py`) |
 
 ## Adding Rules
 
