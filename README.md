@@ -7,6 +7,7 @@ Project rules for AI coding assistants. Markdown (`.md`) with YAML frontmatter f
 ```
 .
 ├── README.md
+├── CONTRIBUTING.md
 ├── LICENSE
 └── rules/
     ├── formatting-and-language.md
@@ -15,6 +16,14 @@ Project rules for AI coding assistants. Markdown (`.md`) with YAML frontmatter f
 ```
 
 - **rules/** — Markdown rule files with optional YAML frontmatter (e.g. `description`, `globs`, `alwaysApply`).
+
+## Rule Modes
+
+| Mode | Frontmatter | When Applied |
+|------|-------------|--------------|
+| Always | `alwaysApply: true` | In every session |
+| Auto Attached | `alwaysApply: false`, `globs: "**/*.tex"` | When matching files are open |
+| Manual | `alwaysApply: false`, no globs | Only when explicitly referenced (e.g. `@ruleName`) |
 
 ## Usage
 
@@ -45,6 +54,10 @@ alwaysApply: false # true = apply in every session
 
 Rule content...
 ```
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
