@@ -10,12 +10,14 @@ Project rules for AI coding assistants. Markdown (`.md`) with YAML frontmatter f
 ├── CONTRIBUTING.md
 ├── LICENSE
 └── rules/
-    ├── formatting-and-language.md
-    ├── editing-policy.md
-    └── latex-style.md
+    ├── global/
+    │   └── base-rules.md    # Typography, language, editing policy
+    └── tech/
+        └── latex.md         # LaTeX formatting (applies when .tex files are open)
 ```
 
-- **rules/** — Markdown rule files with optional YAML frontmatter (e.g. `description`, `globs`, `alwaysApply`).
+- **rules/global/** — Cross-cutting rules applied in every session.
+- **rules/tech/** — Tech-specific rules (globs) applied when matching files are open.
 
 ## Rule Modes
 
@@ -35,13 +37,14 @@ Clone the repo and use the rules as needed for your editor or AI assistant. Copy
 
 | Rule | Description |
 |------|-------------|
-| formatting-and-language | Typography (Title Case for headings); language (American English, code in English) |
-| editing-policy | Deterministic editing: minimal diffs, scope control, no opportunistic changes |
-| latex-style | LaTeX formatting: em/en dashes, sentence-per-line |
+| global/base-rules | Typography (Title Case), language (American English, code in English), deterministic editing |
+| tech/latex | LaTeX: em/en dashes, sentence-per-line (auto-attached for `**/*.tex`) |
 
 ## Adding Rules
 
-Add new `.md` files under `rules/`. Example frontmatter:
+Add new `.md` files under `rules/global/`, `rules/tech/`, or a new category. Each rule should state that explicit user requests override it.
+
+Example frontmatter:
 
 ```yaml
 ---

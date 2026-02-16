@@ -2,7 +2,7 @@
 
 ## Adding or Changing Rules
 
-1. Edit or add files under `rules/`. Use `.md` with YAML frontmatter.
+1. Edit or add files under `rules/global/`, `rules/tech/`, etc. Use `.md` with YAML frontmatter.
 2. Test the rules in your editor (e.g. Cursor).
 3. Open a pull request for review before merging.
 

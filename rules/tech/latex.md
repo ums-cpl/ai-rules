@@ -6,6 +6,8 @@ alwaysApply: false
 
 # LaTeX Style
 
+Explicit user requests override these rules.
+
 In LaTeX:
 
 - Always use `---` for em dashes and `--` for en dashes; never use Unicode dashes (—, –).
