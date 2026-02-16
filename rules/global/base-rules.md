@@ -3,7 +3,7 @@ description: Base rules: typography, language, deterministic editing
 alwaysApply: true
 ---
 
-# Base Rules
+# AI Rules — Code Generation Standards
 
 Explicit user requests override these rules.
 
@@ -16,7 +16,15 @@ Do not alter casing inside code, filenames, identifiers, or verbatim text.
 
 When using English, use American English unless explicitly requested otherwise.
 
-All source code---including comments, identifiers, strings (e.g., error messages), and documentation---is to be written in English unless explicitly requested otherwise.
+All source code must use **English** for any developer-defined natural-language elements, including:
+
+- Comments
+- Identifiers (variables, functions, classes, modules, etc.)
+- String literals intended for humans (e.g., log messages, errors)
+- Documentation and docstrings
+- Commit messages and inline explanations
+
+This requirement applies only where wording is developer-defined, not where constrained by a library, standard, or external interface.
 
 ## Editing Policy
 
