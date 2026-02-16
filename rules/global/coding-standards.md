@@ -1,5 +1,5 @@
 ---
-description: Base rules: typography, language, deterministic editing
+description: Coding standards: typography, language, deterministic editing
 alwaysApply: true
 ---
 

@@ -12,7 +12,7 @@ Markdown (`.md`) with YAML frontmatter for portability across tools and editors.
 ├── LICENSE
 └── rules/
     ├── global/
-    │   └── base-rules.md    # Typography, language, editing policy
+    │   └── coding-standards.md    # Typography, language, editing policy
     └── tech/
         ├── latex.md         # LaTeX formatting (applies when .tex files are open)
         ├── python.md        # Python style (applies when .py files are open)
@@ -42,7 +42,7 @@ Rules are installed into `.cursor/rules/`.
 
 | Rule | Description |
 |------|-------------|
-| global/base-rules | Typography (Title Case), language (American English, code in English), deterministic editing |
+| global/coding-standards | Typography (Title Case), language (American English, code in English), deterministic editing |
 | tech/latex | *LaTeX* style and conventions (auto-attached for `**/*.tex`) |
 | tech/python | *Python* style and conventions (placeholder; auto-attached for `**/*.py`) |
 | tech/cpp | *C++* style and conventions (placeholder; auto-attached for `**/*.cpp`) |
