@@ -1,6 +1,7 @@
 # AI Rules
 
-Project rules for AI coding assistants. Markdown (`.md`) with YAML frontmatter for portability across tools and editors.
+Project rules for AI coding assistants.
+Markdown (`.md`) with YAML frontmatter for portability across tools and editors.
 
 ## Structure
 
@@ -29,9 +30,11 @@ Project rules for AI coding assistants. Markdown (`.md`) with YAML frontmatter f
 
 ## Usage
 
-Clone the repo and use the rules as needed for your editor or AI assistant. Copy files from `rules/` into your project's rules directory, or reference them as documentation.
+Clone the repo and use the rules as needed for your editor or AI assistant.
+Copy files from `rules/` into your project's rules directory, or reference them as documentation.
 
-**Example (Cursor):** `Rules → New → Add from GitHub → enter this repo's URL`. Rules are installed into `.cursor/rules/`.
+**Example (Cursor):** `Rules → New → Add from GitHub → enter this repo's URL`.
+Rules are installed into `.cursor/rules/`.
 
 ## Rules Overview
 
@@ -42,7 +45,8 @@ Clone the repo and use the rules as needed for your editor or AI assistant. Copy
 
 ## Adding Rules
 
-Add new `.md` files under `rules/global/`, `rules/tech/`, or a new category. Each rule should state that explicit user requests override it.
+Add new `.md` files under `rules/global/`, `rules/tech/`, or a new category.
+Each rule should state that explicit user requests override it.
 
 Example frontmatter:
 
