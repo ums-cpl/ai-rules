@@ -12,6 +12,13 @@ Explicit user requests override these rules.
 Use Title Case for all user-visible headings and titles.
 Do not alter casing inside code, filenames, identifiers, or verbatim text.
 
+## Mathematical Typesetting
+
+- Always express mathematical objects using LaTeX math delimiters.
+- Use `$...$` for inline math and `$$...$$` for block math.
+- Avoid Unicode math symbols.
+- Prefer semantic macros (`\sum`, `\otimes`, `\mathcal`, etc.).
+
 ## Language
 
 When using English, use American English unless explicitly requested otherwise.
